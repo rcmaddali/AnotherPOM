@@ -26,8 +26,6 @@ public class GoogleResults {
 
 	@Test
 	public void validateResults()  {
-
-		driver.get("http://google.com");
 		GoogleSearch search = new GoogleSearch(driver);
 		search.typeSearch();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
